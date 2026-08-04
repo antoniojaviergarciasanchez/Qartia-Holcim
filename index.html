@@ -577,6 +577,7 @@
     }
 
     .technical-visual figure {
+      position: relative;
       margin: 0;
       overflow: hidden;
       border-radius: 7px;
@@ -595,6 +596,42 @@
       padding: 13px 15px;
       color: var(--muted);
       font-size: .9rem;
+    }
+
+    .dect-logo-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      display: grid;
+      place-items: center;
+      min-width: 118px;
+      min-height: 54px;
+      padding: 9px 13px 8px;
+      border: 2px solid rgba(255,255,255,.92);
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(0, 96, 175, .95), rgba(0, 180, 220, .92));
+      color: #fff;
+      box-shadow: 0 14px 28px rgba(7, 24, 43, .24);
+      text-align: center;
+    }
+
+    .dect-logo-badge strong {
+      display: block;
+      color: #fff;
+      font-size: 1.28rem;
+      line-height: .95;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .dect-logo-badge span {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255,255,255,.86);
+      font-size: .58rem;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
     }
 
     .phase-grid {
@@ -1081,7 +1118,7 @@
               <ul class="architecture-list">
                 <li>Detección de desalineación, desequilibrio, desgaste de rodamientos, falta de lubricación o cavitación.</li>
                 <li>Acelerómetros de hasta 12 kHz, plataforma de adquisición y FFT para medición continua.</li>
-                <li><strong>Comunicaciones inalámbricas DECT NR+ 5G, sin operadora, no celular, descentralizada y en espectro libre. Mayores Coberturas y topologías en malla para llegar a todos los emplazamientos de fábrica</strong></li>
+                <li><strong>Comunicaciones inalámbricas DECT NR+ 5G, sin operadora, no celular, descentralizada y en espectro libre. Mayores Coberturas y Topologías en Malla para llegar a todos los emplazamientos de la Cementera</strong></li>
                 <li>Asistente LLM de diagnóstico en cliente u on-premise/cloud, con criterio equivalente a experto categoría II.</li>
                 <li>Servicio de alertas en tiempo real para avisar ante aumentos de severidad, tendencias fuera de rango, cambios bruscos de comportamiento o riesgo creciente en activos rotativos.</li>
               </ul>
@@ -1091,8 +1128,9 @@
                 <img src="assets/images/electronica-vibraciones.png" alt="Electrónica del sistema de vibraciones">
                 <figcaption>Electrónica del sistema orientada a adquisición, procesamiento y digitalización continua en planta.</figcaption>
               </figure>
-              <figure>
+              <figure class="dect-figure">
                 <img src="assets/images/modulos-vibraciones.png" alt="Módulos de vibración para industria">
+                <span class="dect-logo-badge" aria-label="DECT NR+ 5G"><strong>DECT NR+</strong><span>5G mesh</span></span>
                 <figcaption>Módulos preparados para transmisión DECT, despliegue sobre activos industriales y conectividad fiable.</figcaption>
               </figure>
             </div>
