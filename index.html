@@ -1,0 +1,1297 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brochure QARTIA para Holcim | Mantenimiento predictivo por vibraciones</title>
+  <meta name="description" content="Brochure QARTIA para Holcim sobre mantenimiento predictivo por vibraciones, diagnóstico continuo, sensorización industrial, analítica e IA.">
+  <style>
+    :root {
+      --holcim-blue: #1d4370;
+      --holcim-cyan: #16a7d7;
+      --holcim-green: #64bd2f;
+      --qartia-blue: #144e9c;
+      --qartia-mint: #36deb8;
+      --ink: #182233;
+      --muted: #657184;
+      --line: #dbe4ea;
+      --paper: #ffffff;
+      --soft: #f3f7f9;
+      --deep: #07182b;
+      --shadow: 0 22px 55px rgba(20, 32, 51, .12);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: #dde7ec;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(29, 67, 112, .08) 0 1px, transparent 1px 100%) 0 0 / 72px 72px,
+        linear-gradient(180deg, #eef4f7 0%, #dce7ec 100%);
+      line-height: 1.52;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    p, h1, h2, h3 { margin-top: 0; }
+
+    .document {
+      width: min(1180px, calc(100% - 36px));
+      margin: 28px auto 40px;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 18px;
+      padding: 12px 16px;
+      border: 1px solid rgba(219, 228, 234, .85);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .94);
+      box-shadow: 0 10px 28px rgba(20, 32, 51, .08);
+      backdrop-filter: blur(14px);
+    }
+
+    .toolbar-logos {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      min-width: 0;
+    }
+
+    .qartia-logo { width: 126px; height: auto; }
+    .holcim-logo { width: 168px; height: auto; }
+
+    .toolbar-title {
+      color: var(--muted);
+      font-size: .84rem;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 11px 16px;
+      border: 1px solid var(--holcim-blue);
+      border-radius: 6px;
+      background: var(--holcim-blue);
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 850;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--holcim-blue);
+    }
+
+    .brochure {
+      display: grid;
+      gap: 22px;
+    }
+
+    .sheet {
+      position: relative;
+      min-height: 700px;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .sheet-inner {
+      position: relative;
+      z-index: 2;
+      padding: clamp(30px, 5vw, 58px);
+    }
+
+    .sheet-number {
+      position: absolute;
+      right: 30px;
+      bottom: 24px;
+      color: rgba(24, 34, 51, .22);
+      font-size: .86rem;
+      font-weight: 900;
+      letter-spacing: .18em;
+      z-index: 3;
+    }
+
+    .accent-rail {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 14px;
+      background: linear-gradient(180deg, var(--holcim-green), var(--holcim-cyan), var(--holcim-blue));
+    }
+
+    .cover {
+      min-height: min(850px, calc(100svh - 94px));
+      color: #fff;
+      background:
+        linear-gradient(90deg, rgba(5, 17, 30, .92) 0%, rgba(5, 17, 30, .74) 48%, rgba(5, 17, 30, .26) 100%),
+        url("assets/images/hero-vibraciones.jpg") center / cover no-repeat;
+    }
+
+    .cover .sheet-inner {
+      min-height: min(850px, calc(100svh - 94px));
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 34px;
+    }
+
+    .cover-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cover-head img {
+      padding: 14px 18px;
+      border-radius: 6px;
+      background: rgba(255,255,255,.94);
+    }
+
+    .cover-head .qartia-logo { width: 150px; }
+    .cover-head .holcim-logo { width: 192px; }
+
+    .cover-title {
+      align-self: center;
+      max-width: 800px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      color: var(--holcim-green);
+      font-size: .86rem;
+      font-weight: 950;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 42px;
+      height: 3px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 22px;
+      font-size: clamp(3rem, 6vw, 6.3rem);
+      line-height: .92;
+      letter-spacing: 0;
+      font-weight: 920;
+    }
+
+    .cover-lead {
+      max-width: 720px;
+      margin-bottom: 0;
+      color: rgba(255,255,255,.88);
+      font-size: clamp(1.12rem, 2vw, 1.36rem);
+    }
+
+    .cover-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 880px;
+    }
+
+    .meta-cell {
+      min-height: 108px;
+      padding: 18px;
+      border-radius: 6px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.22);
+      backdrop-filter: blur(10px);
+    }
+
+    .meta-cell strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #fff;
+      font-size: 1.12rem;
+    }
+
+    .meta-cell span {
+      color: rgba(255,255,255,.76);
+      font-size: .94rem;
+    }
+
+    .section-head {
+      max-width: 850px;
+      margin-bottom: 34px;
+    }
+
+    .section-label {
+      margin-bottom: 10px;
+      color: var(--holcim-blue);
+      font-size: .82rem;
+      font-weight: 950;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      color: var(--ink);
+      font-size: clamp(2rem, 4vw, 4.3rem);
+      line-height: .98;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 790px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr);
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .text-block {
+      padding: 8px 0 0;
+    }
+
+    .text-block p {
+      margin-bottom: 16px;
+      color: #3f4a59;
+      font-size: 1.02rem;
+    }
+
+    .image-panel {
+      min-height: 480px;
+      overflow: hidden;
+      border-radius: 7px;
+      background: #0b1c30;
+      position: relative;
+    }
+
+    .image-panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-panel.readable-figure {
+      min-height: 460px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .image-panel.readable-figure img {
+      padding: 28px;
+      object-fit: contain;
+    }
+
+    .image-panel figcaption {
+      position: absolute;
+      inset: auto 18px 18px 18px;
+      padding: 15px 16px;
+      border-radius: 6px;
+      color: rgba(255,255,255,.84);
+      background: rgba(5, 17, 30, .76);
+      font-size: .92rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .impact-item {
+      min-height: 335px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+    }
+
+    .impact-item img {
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+    }
+
+    .impact-copy {
+      padding: 18px;
+    }
+
+    .impact-tag {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--holcim-green);
+      font-size: .8rem;
+      font-weight: 950;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin-bottom: 9px;
+      color: var(--ink);
+      font-size: 1.12rem;
+      line-height: 1.18;
+    }
+
+    .impact-copy p,
+    .phase p,
+    .kpi p,
+    .architecture-list li {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, .98fr) minmax(340px, 1.02fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    .architecture-list {
+      display: grid;
+      gap: 12px;
+      margin: 24px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .architecture-list li {
+      position: relative;
+      min-height: 54px;
+      padding: 14px 16px 14px 46px;
+      border: 1px solid rgba(29, 67, 112, .14);
+      border-radius: 6px;
+      background: rgba(243, 247, 249, .78);
+    }
+
+    .architecture-list li::before {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 17px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--holcim-green), var(--holcim-cyan));
+    }
+
+    .prediction-layout {
+      display: grid;
+      grid-template-columns: minmax(360px, .92fr) minmax(0, 1.08fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .prediction-head {
+      max-width: 940px;
+      margin-bottom: 22px;
+    }
+
+    .prediction-head h2 {
+      max-width: 760px;
+      font-size: clamp(2.25rem, 3.6vw, 3.75rem);
+    }
+
+    .prediction-copy {
+      display: grid;
+      min-height: 100%;
+    }
+
+    .prediction-flow {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      min-height: 100%;
+    }
+
+    .prediction-step {
+      display: grid;
+      align-content: start;
+      gap: 12px;
+      min-height: 0;
+      align-items: start;
+      padding: 16px;
+      border-radius: 7px;
+      border: 1px solid rgba(29, 67, 112, .13);
+      background: #fff;
+    }
+
+    .prediction-step span {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      color: #fff;
+      background: linear-gradient(135deg, var(--holcim-blue), var(--holcim-cyan));
+      font-weight: 950;
+    }
+
+    .prediction-step h3 {
+      margin-bottom: 4px;
+      font-size: 1.02rem;
+      line-height: 1.12;
+    }
+
+    .prediction-step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .prediction-side-step {
+      grid-template-columns: 44px 1fr;
+      align-content: center;
+      align-items: start;
+      min-height: 116px;
+      border-top: 4px solid var(--holcim-green);
+    }
+
+    .prediction-side-step h3 {
+      margin-bottom: 5px;
+      color: var(--holcim-blue);
+      font-size: 1.12rem;
+      line-height: 1.22;
+    }
+
+    .prediction-side-step p {
+      max-width: 420px;
+      font-size: .92rem;
+    }
+
+    .prediction-visual {
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      gap: 12px;
+      min-height: 100%;
+    }
+
+    .prediction-figure {
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      margin: 0;
+      padding: 18px;
+      aspect-ratio: 4 / 3;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .prediction-figure img {
+      width: 100%;
+      height: 100%;
+      max-height: none;
+      object-fit: contain;
+    }
+
+    .prediction-figure figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .fit-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .fit-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 17px;
+      border: 1px solid rgba(29, 67, 112, .14);
+      border-radius: 7px;
+      background: rgba(255,255,255,.78);
+    }
+
+    .fit-badge {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--holcim-blue), var(--holcim-cyan));
+      color: #fff;
+      font-weight: 950;
+    }
+
+    .fit-item h3 {
+      margin-bottom: 4px;
+    }
+
+    .fit-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .technical-visual {
+      display: grid;
+      gap: 14px;
+    }
+
+    .technical-visual figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 7px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+    }
+
+    .technical-visual img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      background: #fff;
+    }
+
+    .technical-visual figcaption {
+      padding: 13px 15px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .phase-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 8px 0 28px;
+    }
+
+    .phase {
+      min-height: 210px;
+      padding: 22px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .phase span {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 24px;
+      border-radius: 50%;
+      background: var(--holcim-blue);
+      color: #fff;
+      font-weight: 950;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .kpi {
+      min-height: 145px;
+      padding: 20px;
+      border-radius: 7px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--deep), var(--holcim-blue));
+    }
+
+    .kpi strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #d3ffe9;
+      font-size: 1.08rem;
+    }
+
+    .kpi p {
+      margin: 0;
+      color: rgba(255,255,255,.78);
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+
+    .video-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      box-shadow: 0 16px 38px rgba(20, 32, 51, .08);
+    }
+
+    .video-embed {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #07182b;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-thumb {
+      position: absolute;
+      inset: 0;
+      display: block;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .video-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .9;
+      transition: transform .22s ease, opacity .22s ease;
+    }
+
+    .video-thumb:hover img {
+      transform: scale(1.035);
+      opacity: 1;
+    }
+
+    .play-badge {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display: grid;
+      place-items: center;
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(7, 24, 43, .78);
+      border: 2px solid rgba(255,255,255,.72);
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 950;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      box-shadow: 0 18px 38px rgba(0,0,0,.28);
+    }
+
+    .video-copy {
+      padding: 20px;
+    }
+
+    .video-copy p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .video-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      margin-top: 14px;
+      padding: 12px 16px;
+      border-radius: 6px;
+      background: var(--holcim-blue);
+      color: #fff;
+      font-size: .86rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .video-link::after {
+      content: ">";
+      margin-left: 9px;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .integration {
+      background:
+        radial-gradient(circle at 88% 10%, rgba(100, 189, 47, .20), transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #eef6f9 100%);
+    }
+
+    .cta-sheet {
+      color: #fff;
+      background:
+        linear-gradient(90deg, rgba(7, 24, 43, .94), rgba(29, 67, 112, .84)),
+        url("assets/images/instalacion-vibraciones.jpg") center / cover no-repeat;
+    }
+
+    .cta-sheet h2,
+    .cta-sheet .section-label {
+      color: #fff;
+    }
+
+    .cta-sheet .lead,
+    .cta-sheet p {
+      color: rgba(255,255,255,.82);
+    }
+
+    .cta-layout {
+      min-height: 560px;
+      display: grid;
+      align-items: center;
+    }
+
+    .cta-box {
+      max-width: 760px;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .cta-actions .button {
+      border-color: transparent;
+      background: var(--holcim-green);
+      color: #07182b;
+    }
+
+    .cta-actions .button.secondary {
+      border-color: rgba(255,255,255,.45);
+      background: rgba(255,255,255,.08);
+      color: #fff;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      color: #7a8795;
+      font-size: .86rem;
+      text-align: center;
+    }
+
+    @media (max-width: 1040px) {
+      .toolbar {
+        position: static;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .toolbar-title { white-space: normal; }
+      .impact-grid,
+      .phase-grid,
+      .kpi-grid,
+      .video-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .intro-grid,
+      .split,
+      .prediction-layout { grid-template-columns: 1fr; }
+
+      .prediction-figure {
+        min-height: 440px;
+      }
+
+      .image-panel { min-height: 360px; }
+    }
+
+    @media (max-width: 640px) {
+      .document {
+        width: min(100% - 22px, 1180px);
+        margin-top: 12px;
+      }
+
+      .toolbar-logos {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .qartia-logo { width: 104px; }
+      .holcim-logo { width: 130px; }
+      .toolbar-actions { width: 100%; }
+      .button { width: 100%; }
+
+      .cover-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .cover-meta,
+      .impact-grid,
+      .phase-grid,
+      .kpi-grid,
+      .video-grid,
+      .prediction-flow {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+
+      .prediction-step {
+        min-height: auto;
+      }
+
+      .prediction-figure {
+        min-height: 320px;
+      }
+
+      .sheet { min-height: auto; }
+      .image-panel { min-height: 300px; }
+    }
+
+    @media print {
+      html, body {
+        background: #fff;
+      }
+
+      .document {
+        width: 100%;
+        margin: 0;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .brochure {
+        display: block;
+      }
+
+      .sheet {
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="document">
+    <header class="toolbar" aria-label="Cabecera del brochure">
+      <div class="toolbar-logos">
+        <img class="qartia-logo" src="assets/brand/logo-qartia.png" alt="QARTIA">
+        <span class="toolbar-title">Brochure a petición de Holcim</span>
+        <img class="holcim-logo" src="assets/brand/holcim-logo.svg" alt="Holcim">
+      </div>
+      <div class="toolbar-actions">
+        <button class="button secondary" type="button" onclick="window.print()">Guardar como PDF</button>
+        <a class="button secondary" href="#videos">Ver vídeos</a>
+        <a class="button" href="assets/downloads/triptico_qartia_vibraciones.pdf">Ficha vibraciones</a>
+      </div>
+    </header>
+
+    <main class="brochure">
+      <section class="sheet cover" aria-labelledby="cover-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="cover-head">
+            <img class="qartia-logo" src="assets/brand/logo-qartia.png" alt="QARTIA">
+            <img class="holcim-logo" src="assets/brand/holcim-logo.svg" alt="Holcim">
+          </div>
+          <div class="cover-title">
+            <p class="kicker">Mantenimiento predictivo por vibraciones</p>
+            <h1 id="cover-title">Diagnóstico continuo para activos críticos Holcim.</h1>
+            <p class="cover-lead">QARTIA Smart Technologies propone una solución de sensorización, electrónica propia, comunicaciones industriales e inteligencia artificial para anticipar fallos en maquinaria rotativa de planta.</p>
+          </div>
+          <div class="cover-meta">
+            <div class="meta-cell">
+              <strong>Enfoque</strong>
+              <span>Vibraciones industriales y mantenimiento predictivo.</span>
+            </div>
+            <div class="meta-cell">
+              <strong>Objetivo</strong>
+              <span>Menos paradas no planificadas y más disponibilidad.</span>
+            </div>
+            <div class="meta-cell">
+              <strong>Formato</strong>
+              <span>Piloto ejecutivo, medible y escalable por activos.</span>
+            </div>
+          </div>
+        </div>
+        <span class="sheet-number">01</span>
+      </section>
+
+      <section class="sheet" aria-labelledby="diagnostico-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="intro-grid">
+            <div class="text-block">
+              <div class="section-head">
+                <p class="section-label">Vibraciones industriales</p>
+                <h2 id="diagnostico-title">Del dato crudo a la acción de mantenimiento.</h2>
+              </div>
+              <p>QARTIA desarrolla soluciones de mantenimiento predictivo basadas en análisis avanzado de vibraciones para anticipar fallos en maquinaria rotativa y activos industriales.</p>
+              <p>La tecnología captura señal de alta resolución directamente en planta, analiza la condición en continuo y convierte los datos de vibración en alertas accionables para operaciones, mantenimiento e ingeniería.</p>
+              <p>El sistema detecta de forma temprana desalineaciones, desbalanceos, desgaste de rodamientos, falta de lubricación y otros patrones de degradación antes de que provoquen paradas no planificadas.</p>
+              <p>QARTIA integra sensórica, electrónica propia, redes privadas DECT NR+ y modelos de Inteligencia Artificial para desplegar una solución end-to-end, incluso en entornos industriales complejos o sin infraestructura previa de comunicaciones.</p>
+            </div>
+            <figure class="image-panel">
+              <img src="assets/images/colocacion-vibraciones.png" alt="Instalación y configuración de sistema de vibraciones en planta industrial">
+              <figcaption>Despliegue real en planta para mantenimiento predictivo por vibraciones, conectividad industrial y diagnóstico continuo sobre activos.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <span class="sheet-number">02</span>
+      </section>
+
+      <section class="sheet integration" aria-labelledby="encaje-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="intro-grid">
+            <div class="text-block">
+              <div class="section-head">
+                <p class="section-label">Encaje Holcim</p>
+                <h2 id="encaje-title">Diseñado para entornos de producción exigentes.</h2>
+                <p class="lead">En plantas de materiales de construcción, anticipar fallos por vibraciones ayuda a mantener la producción en marcha, reducir riesgos y alargar la vida útil de los activos con mayor carga mecánica.</p>
+              </div>
+              <div class="fit-list">
+                <article class="fit-item">
+                  <span class="fit-badge">M</span>
+                  <div>
+                    <h3>Motores, reductores y acoplamientos</h3>
+                    <p>Seguimiento de desequilibrios, holguras, desalineaciones y evolución de rodamientos.</p>
+                  </div>
+                </article>
+                <article class="fit-item">
+                  <span class="fit-badge">C</span>
+                  <div>
+                    <h3>Cintas, bombas y ventiladores</h3>
+                    <p>Priorización de avisos para equipos que condicionan producción, transporte y seguridad.</p>
+                  </div>
+                </article>
+                <article class="fit-item">
+                  <span class="fit-badge">P</span>
+                  <div>
+                    <h3>Planta conectada</h3>
+                    <p>Datos accesibles para mantenimiento, operación e ingeniería sin depender de rondas manuales.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="technical-visual">
+              <figure>
+                <img src="assets/images/despliegue-planta.jpg" alt="Despliegue de sensórica en planta industrial">
+                <figcaption>Despliegue de sensórica industrial sobre activos críticos y puntos de operación continua.</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/colocacion-vibraciones.png" alt="Colocación de sensor de vibraciones">
+                <figcaption>Instalación sobre activo para capturar condición mecánica y detectar evolución de fallos.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <span class="sheet-number">03</span>
+      </section>
+
+      <section class="sheet" aria-labelledby="impacto-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="section-head">
+            <p class="section-label">Impacto operativo</p>
+            <h2 id="impacto-title">Menos paradas, más disponibilidad y decisiones antes de la avería.</h2>
+            <p class="lead">El valor del sistema no está solo en medir vibración, sino en convertirla en una lectura común de severidad, tendencia y prioridad de intervención.</p>
+          </div>
+          <div class="impact-grid">
+            <article class="impact-item">
+              <img src="assets/images/sensorizacion-vibration-box.jpeg" alt="Sensor de vibraciones instalado en activo industrial">
+              <div class="impact-copy">
+                <span class="impact-tag">12 kHz</span>
+                <h3>Sensórica de alta resolución</h3>
+                <p>Captura de vibración en dominio de tiempo y frecuencia para detectar cambios reales del estado de la máquina.</p>
+              </div>
+            </article>
+            <article class="impact-item">
+              <img src="assets/images/dashboard-vibraciones.png" alt="Dashboard de diagnóstico de vibraciones industriales">
+              <div class="impact-copy">
+                <span class="impact-tag">24/7</span>
+                <h3>Diagnóstico continuo</h3>
+                <p>Severidad y tipo de defecto rotativo disponibles en continuo para actuar antes de la avería.</p>
+              </div>
+            </article>
+            <article class="impact-item">
+              <img src="assets/images/interfaz-vibraciones.png" alt="Interfaz industrial de lectura de vibraciones">
+              <div class="impact-copy">
+                <span class="impact-tag">ISO 10816 / 20816</span>
+                <h3>Severidad estandarizada</h3>
+                <p>Clasificación de riesgo bajo criterio industrial reconocido para mantenimiento, operaciones e ingeniería.</p>
+              </div>
+            </article>
+            <article class="impact-item">
+              <img src="assets/images/instalacion-vibraciones.jpg" alt="Instalación de sensórica de vibraciones en planta industrial">
+              <div class="impact-copy">
+                <span class="impact-tag">ROI visible</span>
+                <h3>Menos paradas y más OEE</h3>
+                <p>Priorización de intervenciones por criticidad real del activo y por coste evitado de parada.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <span class="sheet-number">04</span>
+      </section>
+
+      <section class="sheet" aria-labelledby="arquitectura-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="split">
+            <div>
+              <p class="section-label">Propuesta QARTIA</p>
+              <h2 id="arquitectura-title">Diagnóstico experto, edge y predicción con IA.</h2>
+              <p class="lead">La arquitectura técnica de QARTIA se apoya en hardware propietario, comunicaciones industriales y un motor de diagnóstico experto con despliegue flexible.</p>
+              <ul class="architecture-list">
+                <li>Detección de desalineación, desequilibrio, desgaste de rodamientos, falta de lubricación o cavitación.</li>
+                <li>Acelerómetros de hasta 12 kHz, plataforma de adquisición y FFT para medición continua.</li>
+                <li>Comunicaciones DECT NR+ 5G, sin operadora, no celular, descentralizada y en espectro libre.</li>
+                <li>Asistente LLM de diagnóstico en cliente u on-premise/cloud, con criterio equivalente a experto categoría II.</li>
+                <li>Servicio de alertas en tiempo real para avisar ante aumentos de severidad, tendencias fuera de rango, cambios bruscos de comportamiento o riesgo creciente en activos rotativos.</li>
+              </ul>
+            </div>
+            <div class="technical-visual">
+              <figure>
+                <img src="assets/images/electronica-vibraciones.png" alt="Electrónica del sistema de vibraciones">
+                <figcaption>Electrónica del sistema orientada a adquisición, procesamiento y digitalización continua en planta.</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/modulos-vibraciones.png" alt="Módulos de vibración para industria">
+                <figcaption>Módulos preparados para transmisión DECT, despliegue sobre activos industriales y conectividad fiable.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <span class="sheet-number">05</span>
+      </section>
+
+      <section class="sheet integration" aria-labelledby="modelos-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="section-head prediction-head">
+            <p class="section-label">IA conectada</p>
+            <h2 id="modelos-title">Predecir cuándo se produce el fallo.</h2>
+            <p class="lead">La IA utiliza los datos de vibración y funcionamiento para estimar la evolución del activo y anticipar el momento en que puede aparecer el fallo.</p>
+          </div>
+          <div class="prediction-layout">
+            <div class="prediction-visual">
+              <figure class="prediction-figure">
+                <img src="assets/images/ia-motor-predictions.png" alt="Predicción de vibraciones, velocidad y probabilidad de fallo sobre un motor">
+                <figcaption>Predicción de comportamiento de activos y lectura probabilística del fallo sobre motores y máquinas rotativas.</figcaption>
+              </figure>
+              <article class="prediction-step prediction-side-step">
+                <span>05</span>
+                <div>
+                  <h3>Gemelo Digital</h3>
+                  <p>Visualización de los resultados de la IA en un Gemelo Digital de la Máquina monitorizada.</p>
+                </div>
+              </article>
+            </div>
+            <div class="prediction-copy">
+              <div class="prediction-flow" aria-label="Flujo de predicción del fallo">
+                <article class="prediction-step">
+                  <span>01</span>
+                  <div>
+                    <h3>Señal del activo</h3>
+                    <p>Vibración, velocidad, temperatura e histórico de operación alimentan el modelo.</p>
+                  </div>
+                </article>
+                <article class="prediction-step">
+                  <span>02</span>
+                  <div>
+                    <h3>Predicción del fallo</h3>
+                    <p>La IA clasifica el estado del equipo y estima cómo evoluciona la probabilidad de fallo.</p>
+                  </div>
+                </article>
+                <article class="prediction-step">
+                  <span>03</span>
+                  <div>
+                    <h3>Acción recomendada</h3>
+                    <p>El sistema prioriza la intervención antes de una parada no planificada.</p>
+                  </div>
+                </article>
+                <article class="prediction-step">
+                  <span>04</span>
+                  <div>
+                    <h3>Integrado con RAG</h3>
+                    <p>El equipo puede preguntar en lenguaje natural por el diagnóstico, la causa probable, el histórico del activo y las recomendaciones de mantenimiento.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="sheet-number">06</span>
+      </section>
+
+      <section class="sheet" aria-labelledby="piloto-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="section-head">
+            <p class="section-label">Activación rápida</p>
+            <h2 id="piloto-title">Piloto ejecutivo en 4 fases.</h2>
+            <p class="lead">Un piloto acotado permite validar calidad de dato, cobertura, severidad de alertas y valor económico antes de escalar por áreas o familias de activos.</p>
+          </div>
+          <div class="phase-grid">
+            <article class="phase">
+              <span>1</span>
+              <h3>Selección de activos</h3>
+              <p>Criticidad operativa, histórico de fallos, coste de parada y ventana de mantenimiento.</p>
+            </article>
+            <article class="phase">
+              <span>2</span>
+              <h3>Despliegue en campo</h3>
+              <p>Sensórica y red con validación de cobertura, anclaje mecánico y calidad de la señal.</p>
+            </article>
+            <article class="phase">
+              <span>3</span>
+              <h3>Diagnóstico e IA</h3>
+              <p>Informe de impacto, alertas accionables y recomendaciones priorizadas por activo.</p>
+            </article>
+            <article class="phase">
+              <span>4</span>
+              <h3>Plan de implantación</h3>
+              <p>Propuesta económica final, plan de escalado y acuerdo de servicio.</p>
+            </article>
+          </div>
+          <div class="kpi-grid">
+            <article class="kpi">
+              <strong>MTBF</strong>
+              <p>Fallos menos frecuentes y más estabilidad en maquinaria rotativa crítica.</p>
+            </article>
+            <article class="kpi">
+              <strong>OEE</strong>
+              <p>Más disponibilidad de planta y mayor tiempo de producción útil.</p>
+            </article>
+            <article class="kpi">
+              <strong>Riesgo por activo</strong>
+              <p>Severidad y frecuencia para priorizar donde una parada cuesta más dinero.</p>
+            </article>
+            <article class="kpi">
+              <strong>Trazabilidad</strong>
+              <p>Informe técnico para mantenimiento, operaciones y dirección.</p>
+            </article>
+          </div>
+        </div>
+        <span class="sheet-number">07</span>
+      </section>
+
+      <section class="sheet integration" aria-labelledby="integracion-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="intro-grid">
+            <figure class="image-panel">
+              <img src="assets/images/interfaz-vibraciones.png" alt="Panel de integración de sensorización de vibraciones">
+              <figcaption>Integración de sensórica existente con visualización propia, comunicaciones industriales y lectura unificada de vibraciones en planta.</figcaption>
+            </figure>
+            <div class="text-block">
+              <div class="section-head">
+                <p class="section-label">Integración de tecnologías</p>
+                <h2 id="integracion-title">También si Holcim ya dispone de sensorización.</h2>
+                <p class="lead">QARTIA puede integrarse sobre hardware propio o sobre sensórica existente en fábrica, evitando duplicidades y aprovechando inversiones previas.</p>
+              </div>
+              <p>La solución es agnóstica a plataforma y fabricante. Puede trabajar con equipos existentes y con tecnologías como LoRa, Ethernet o Modbus, adaptándose a las particularidades de cada entorno industrial.</p>
+              <p>El objetivo es entregar una capa común de visualización, comunicaciones y diagnóstico para que mantenimiento, operaciones e ingeniería lean el riesgo mecánico con el mismo criterio.</p>
+              <p>Esta aproximación facilita iniciar por activos críticos y avanzar hacia un modelo de mantenimiento más autónomo, trazable y orientado a coste evitado.</p>
+            </div>
+          </div>
+        </div>
+        <span class="sheet-number">08</span>
+      </section>
+
+      <section class="sheet" id="videos" aria-labelledby="videos-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner">
+          <div class="section-head">
+            <p class="section-label">Vídeos demostrativos</p>
+            <h2 id="videos-title">Mantenimiento predictivo y RAG aplicado.</h2>
+          </div>
+          <div class="video-grid">
+            <article class="video-card">
+              <div class="video-embed">
+                <a class="video-thumb" href="https://youtu.be/tKtnFuy05EQ" target="_blank" rel="noopener" aria-label="Abrir vídeo de mantenimiento predictivo por vibraciones">
+                  <img src="assets/images/video-vibraciones-thumb.jpg" alt="Miniatura del vídeo de mantenimiento predictivo por vibraciones">
+                  <span class="play-badge">Play</span>
+                </a>
+              </div>
+              <div class="video-copy">
+                <h3>Diagnóstico vibracional en planta</h3>
+                <p>Vídeo sobre mantenimiento predictivo basado en el análisis de vibraciones, centrado en el despliegue de la solución en activos industriales reales.</p>
+                <a class="video-link" href="https://youtu.be/tKtnFuy05EQ" target="_blank" rel="noopener">Abrir vídeo de vibraciones</a>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="video-embed">
+                <a class="video-thumb" href="https://youtu.be/wqHIhNzOuo4" target="_blank" rel="noopener" aria-label="Abrir vídeo RAG Chat Bot">
+                  <img src="assets/images/video-rag-thumb.jpg" alt="Miniatura del vídeo RAG Chat Bot de QARTIA">
+                  <span class="play-badge">Play</span>
+                </a>
+              </div>
+              <div class="video-copy">
+                <h3>RAG - Chat Bot operativo</h3>
+                <p>Asistente de Mantenimiento Predictivo equivalente a experto de Vibraciones nivel Categoría II.</p>
+                <a class="video-link" href="https://youtu.be/wqHIhNzOuo4" target="_blank" rel="noopener">Abrir vídeo RAG</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <span class="sheet-number">09</span>
+      </section>
+
+      <section class="sheet cta-sheet" aria-labelledby="cierre-title">
+        <span class="accent-rail" aria-hidden="true"></span>
+        <div class="sheet-inner cta-layout">
+          <div class="cta-box">
+            <p class="section-label">Cierre del brochure</p>
+            <h2 id="cierre-title">Solicitar piloto prémium en planta Holcim.</h2>
+            <p class="lead">La propuesta de vibraciones de QARTIA permite empezar con rapidez, medir resultados técnicos desde las primeras semanas y valorar el impacto económico antes de escalar. El siguiente paso sería concretar activos, ventanas de parada, ubicaciones y alcance de comunicaciones.</p>
+            <div class="cta-actions">
+              <a class="button" href="assets/downloads/triptico_qartia_vibraciones.pdf">Descargar folleto de vibraciones</a>
+              <a class="button secondary" href="mailto:info@qartia.com?subject=Brochure%20Holcim%20-%20Mantenimiento%20predictivo%20por%20vibraciones">Contactar con QARTIA</a>
+            </div>
+          </div>
+        </div>
+        <span class="sheet-number">10</span>
+      </section>
+    </main>
+
+    <p class="footer-note">QARTIA Smart Technologies · Brochure demostrativo para Holcim · Holcim es una marca de su titular.</p>
+  </div>
+</body>
+</html>
