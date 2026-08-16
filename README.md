@@ -10,4 +10,5 @@ Main assets:
 - `assets/brand/logo-qartia.png`
 - `assets/brand/holcim-logo.svg`
 - `assets/images/hero-vibraciones.jpg`
+- `assets/downloads/qartia-holcim-brochure-en.pdf`
 - `assets/downloads/triptico_qartia_vibraciones.pdf`

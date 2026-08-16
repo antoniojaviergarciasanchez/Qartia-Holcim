@@ -25,6 +25,11 @@
 
     * { box-sizing: border-box; }
 
+    html, body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
     html {
       scroll-behavior: smooth;
       background: #dde7ec;
@@ -936,6 +941,11 @@
       .image-panel { min-height: 300px; }
     }
 
+    @page {
+      size: 1180px 850px;
+      margin: 0;
+    }
+
     @media print {
       html, body {
         background: #fff;
@@ -954,11 +964,37 @@
         display: block;
       }
 
+      .intro-grid {
+        grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr);
+      }
+
+      .split {
+        grid-template-columns: minmax(0, 1fr) minmax(360px, .9fr);
+      }
+
+      .prediction-layout {
+        grid-template-columns: minmax(360px, .92fr) minmax(0, 1.08fr);
+      }
+
+      .impact-grid,
+      .phase-grid,
+      .kpi-grid,
+      .video-grid,
+      .prediction-flow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .sheet {
-        min-height: 100vh;
+        height: 850px;
+        min-height: 850px;
         border-radius: 0;
         box-shadow: none;
+        break-after: page;
         page-break-after: always;
+      }
+
+      .footer-note {
+        display: none;
       }
     }
   </style>
@@ -978,7 +1014,7 @@
         </nav>
         <button class="button secondary" type="button" onclick="window.print()">Save as PDF</button>
         <a class="button secondary" href="#videos">View videos</a>
-        <a class="button" href="assets/downloads/triptico_qartia_vibraciones.pdf">Vibration sheet</a>
+        <a class="button" href="assets/downloads/qartia-holcim-brochure-en.pdf">English PDF</a>
       </div>
     </header>
 
@@ -1346,7 +1382,7 @@
             <h2 id="cierre-title">Request a premium pilot at a Holcim plant.</h2>
             <p class="lead">QARTIA's vibration proposal enables a fast start, technical results from the first weeks and economic impact assessment before scaling. The next step would be to define assets, shutdown windows, locations and communications scope.</p>
             <div class="cta-actions">
-              <a class="button" href="assets/downloads/triptico_qartia_vibraciones.pdf">Download vibration brochure</a>
+              <a class="button" href="assets/downloads/qartia-holcim-brochure-en.pdf">Download English brochure</a>
               <a class="button secondary" href="mailto:info@qartia.com?subject=Holcim%20brochure%20-%20Vibration-based%20predictive%20maintenance">Contact QARTIA</a>
             </div>
           </div>
