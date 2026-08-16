@@ -1,10 +1,10 @@
 # Qartia Holcim
 
-Brochure web estatico para Holcim centrado unicamente en mantenimiento predictivo por vibraciones, basado en la pagina de QARTIA Industria `mantenimiento-predictivo-vibraciones.html`.
+Static web brochure for Holcim focused exclusively on vibration-based predictive maintenance, based on the QARTIA Industry page `mantenimiento-predictivo-vibraciones.html`.
 
-Archivo principal: `index.html`
+Main file: `index.html`
 
-Activos principales:
+Main assets:
 - `assets/brand/logo-qartia.png`
 - `assets/brand/holcim-logo.svg`
 - `assets/images/hero-vibraciones.jpg`
