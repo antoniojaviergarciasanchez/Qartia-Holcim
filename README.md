@@ -2,7 +2,9 @@
 
 Static web brochure for Holcim focused exclusively on vibration-based predictive maintenance, based on the QARTIA Industry page `mantenimiento-predictivo-vibraciones.html`.
 
-Main file: `index.html`
+Pages:
+- `index.html`: English version
+- `es.html`: Spanish version
 
 Main assets:
 - `assets/brand/logo-qartia.png`
